@@ -68,7 +68,7 @@ namespace vscode_lab
                     return map.Value;
             }
 
-            throw new InvalidOperationException("The Telegraph doesn't contains de value");
+            throw new InvalidOperationException("The Telegraph doesn't contains value");
         }
 
         public static char MapToAlphabeticalCharacter(string morseCode)
@@ -81,7 +81,7 @@ namespace vscode_lab
                     return map.Key;
             }
 
-            throw new InvalidOperationException("The Telegraph doesn't contains de value");
+            throw new InvalidOperationException("The Telegraph doesn't contains value");
         }
     }
 }
