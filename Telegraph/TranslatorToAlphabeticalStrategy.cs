@@ -15,13 +15,13 @@ namespace vscode_lab
 
             for (int i = 0; i <= wordsToTranslate.Length - 1; i++)
             {
-                string[] letters = wordsToTranslate[i].Split(INPUT_CHAR_SEPARATOR);
+                string[] morseCodes = wordsToTranslate[i].Split(INPUT_CHAR_SEPARATOR);
                 
                 //TODO: Cambiar a StringBuilder
                 string translatedWord = string.Empty;
-                for (int l = 0; l <= letters.Length - 1; l++)
+                for (int l = 0; l <= morseCodes.Length - 1; l++)
                 {
-                    translatedWord += Telegraph.MapToAlphabeticalCharacter(letters[l]);
+                    translatedWord += Telegraph.MapToAlphabeticalCharacter(morseCodes[l]);
                 }
 
                 if (!result.Equals(string.Empty)) result += OUTPUT_WORD_SEPARATOR;
